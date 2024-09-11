@@ -24,5 +24,68 @@
             <td>22</td>
         </tr>
     </table>
+
+    <table>
+        <caption></caption>
+        <!-- colgroup: col의 스타일을 지정할 수 있음-->
+        <colgroup>
+            <!-- 1, 2열의 스타일-->
+            <col span="2" style="background-color: chartreuse;">
+            <!-- 3열의 스타일-->
+            <col style="background-color: chocolate;">
+        </colgroup>
+        <thead>
+        <tr>
+            <!-- th*3 -->
+            <!-- ctrl + alt + 화살표: 여러개 선택 가능-->
+            <!-- 태그를 선택하고 alt 키로 위치이동가능-->
+            <th>표의 머리</th>
+            <th>표의 머리</th>
+            <th>표의 머리</th>
+        </tr>
+        </thead>
+        <tbody>
+            <!-- alt + shift + 화살표: 텍스트 복사 붙여넣기-->
+            <tr>
+                <td> 내용 붙여넣기</td>
+                <td> 내용 붙여넣기</td>
+                <td> 내용 붙여넣기</td>
+            </tr>
+            <tr>
+                <td> 내용 붙여넣기</td>
+                <td> 내용 붙여넣기</td>
+                <td> 내용 붙여넣기</td>
+            </tr>
+            <tr></tr>
+                <td> 내용 붙여넣기</td>
+                <td> 내용 붙여넣기</td>
+                <td> 내용 붙여넣기</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>표의 꼬리</td>
+                <td>표의 꼬리</td>
+                <td>표의 꼬리</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!--  table[border="1"] -->
+    <table border="1">
+        <tr>
+            <th colspan="3">1-1</th>
+            <th rowspan="3">1-2</th>
+        </tr>
+        <tr>
+            <td>2-1</td>
+            <td rowspan="2">2-2</td>
+            <td>2-3</td>
+        </tr>
+        <tr>
+            <td>3-1</td>
+            <td>3-3</td>
+        </tr>
+    </table>
 </body>
 </html>
