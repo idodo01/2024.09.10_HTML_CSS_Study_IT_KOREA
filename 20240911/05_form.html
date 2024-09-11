@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- get방식: url에 내가 적은 내용이 나옴-->
+    <!-- ex. 검색 -->
+    <form action="02_img_piscum.html" method="get">
+        <input type="text" name="search">
+        <input type="submit"> 
+        <!-- 제출하면 action에 적힌 곳으로 이동-->
+        <!-- action을 적지 않으면, 자기자신으로 이동-->
+    </form>
+
+    <!-- post방식: url에 내가 적은 내용이 안 나옴-->
+    <!-- ex. 로그인 -->
+    <form action="02_img_piscum.html" method="post">
+        <input type="text" name="mysearch">
+        <input type="submit">
+    </form>
+    <hr>
+    <form method="get">
+        <!-- checkbox는 여러 값 선택 가능 -->
+        <input type="checkbox" name="hobby" value="1" id="lol">1롤<br>
+        <input type="checkbox" name="hobby" value="2">2롤<br>
+        <input type="checkbox" name="hobby" value="3">3롤<br>
+        <hr>
+        <!-- 라벨과 체크박스 묶기, 각각 for 속성과 id 속성값 동일하기-->
+        <label for="click">(label 태그 for 속성 값) = (input 태그, id 속성) 하면 라벨 클릭해도, 체크박스 체크됨</label>
+        <input type="checkbox" name="check" id="click">클릭<br>
+        <hr>
+        <!-- radio는 하나만 선택 가능 -->
+        <!-- name으로 라디오 버튼 구분-->
+        <input type="radio" name="gender" value="man">남<br>
+        <input type="radio" name="gender" value="won">녀<br>
+        <hr>
+        <!-- value값, submit시 url에 표시-->
+        <input type="radio" name="grade" value="high">상<br> 
+        <input type="radio" name="grade" value="middle">중<br> 
+        <input type="radio" name="grade" value="low">하<br> 
+
+        <input type="submit">
+    </form>
+
+    <form>
+        <textarea name="30px" id="20" style="width: 100px; height: 100px">hello</textarea>
+        <textarea name="30px" id="20"style="width: 100px; height: 100px">hello
+
+
+            hi
+        </textarea>
+        <!-- p태그와 다르게 안에 띄어쓰기 그대로 적용됨-->
+
+        <select> <!--한개 선택가능-->
+            <!-- option{$}*3 
+                $: 숫자 123
+                {}: 태그 안에 내용 지정
+            -->
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+        </select>
+
+        <select multiple="multiple"> <!--ctrl 클릭하여 다중선택가능-->
+            <!-- option{$$}*5 -->
+            <option>01</option>
+            <option>02</option>
+            <option>03</option>
+            <option>04</option>
+            <option>05</option>
+        </select>
+    </form>
+</body>
+</html>
