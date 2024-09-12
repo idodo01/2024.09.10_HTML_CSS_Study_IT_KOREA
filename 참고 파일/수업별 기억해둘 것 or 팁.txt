@@ -22,3 +22,28 @@
 table 
 > div, span 
 > 시맨틱 태그 (권장인데, 자주는 아직 안쓰임)
+
+===========================================
+3 (20240912)
+1) <style>
+    input[type=text] {color:red;} 
+</style>
+
+<input type="text"> 태그에 css 적용
+
+2) table를 자손선택자로 css를 적용할 때, 
+table과 tr 사이에 자동으로 생기는 tbody를 넣어줘야한다
+<style>
+    table>tbody>tr>th
+</style>
+
+3) #으로 하면 자동 div태그로
+#header>h1+(#nav>h1)
+<div id="header">
+    <!--lorem2:Lorem, ipsum.-->
+    <!--lorem3:Lorem, ipsum dolor.-->
+    <h1>Lorem, ipsum.</h1>
+    <div id="nav">
+        <h1>Lorem.</h1>
+    </div>
+</div>
