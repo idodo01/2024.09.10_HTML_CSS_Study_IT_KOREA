@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px; height: 100px; 
+            position: absolute;
+        }
+        .red{
+            background: crimson; left:10px; top:10px;
+        }
+        /* z-index: 값이 크면 위에 정렬됨  */
+        .green{
+            background-color: greenyellow; left:50px; top:50px; z-index: 1;
+        }
+        .blue{
+            background-color: darkblue; left:90px; top:90px;
+        }
+        /*후손태그*/
+        body div{
+            background-color: red;
+            border: 1px solid black;
+            height: 100px; /*임의의 높이 설정*/
+            position: relative; /*포지션은 static만 아니면 됨, 그래야 absolute가 작용됨*/
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing.
+    <div>
+        <div class="box red"></div>
+        <div class="box green"></div>
+        <div class="box blue"></div>
+    </div>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. In.</h1>
+
+</body>
+</html>

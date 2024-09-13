@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box { width:300px; height: 300px; }
+        .blue { background-color: blue; }
+        .green { background-color: green; }
+        .pink { background-color: pink; }
+        .mini_box { width:50px; height: 50px; position: absolute; left:40px; top:40px; }
+        .relative { position:relative;}
+    </style>
+</head>
+<body>
+    <!--.box.blue-->
+    <div class="box blue">
+        <div class="mini_box pink"></div>
+    </div>
+    <div class="box green relative">
+        <!-- 핑크 박스가 그린 박스 기준으로 left top 이동 -->
+        <div class="mini_box pink"></div>
+    </div>
+</body>
+</html>

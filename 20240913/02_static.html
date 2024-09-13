@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1. static은 아무리 left와 top 값을 변경해도 변경되지 않고
+         body안의 태그가 순서대로 쌓임*/
+        .box {width: 100px; height: 100px;}
+        .red {background-color: red; left: 50px; top: 50px; }
+        .green {background-color: green; left: 0px; top: 0px;}
+        .blue {background-color: blue;}
+    </style>
+</head>
+<body>
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box blue"></div>
+</body>
+</html>

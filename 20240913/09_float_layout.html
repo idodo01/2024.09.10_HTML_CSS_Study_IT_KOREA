@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* float 속성을 이용한 레이아웃 구성
+        자손 태그에 float 속성 적용시 부모태그에 overflow:hidden 적용*/
+        body { width: 560px; margin: 0 auto;}
+        #aside { width: 200px; float:left; background-color: pink;}
+        /*560-200-330=30px은 여백임*/
+        #section{ width: 330px; float:right;background-color:aqua;}
+        /* 부모태그인 wrap에 overflow:hidden */
+        #wrap{ overflow:hidden }
+    </style>
+</head>
+<body>
+    <!--#header>h1{Header}-->
+    <div id="header">
+        <h1>Header</h1>
+    </div>
+    <div id="navigation">
+        <h1>Navigation</h1>
+    </div>
+    <!--#wrap>((#aside>(h1{ASide}+p{lorem}))+#section>(h1{section}+p{mylorem}))-->
+    <div id="wrap">
+        <div id="aside">
+            <h1>ASide</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, porro enim. Ex magnam, cum dolorem unde nulla obcaecati, nihil harum placeat quidem numquam beatae, illum animi minima magni sequi accusantium!</p>
+        </div>
+        <div id="section">
+            <h1>section</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In sapiente ratione esse id iste ducimus, reiciendis animi odit molestiae ipsam laudantium sit quos excepturi, numquam dolorem, hic aliquam quo rem.</p>
+        </div>
+    </div>
+    <!--#footer>h1{footer}-->
+    <div id="footer">
+        <h1>footer</h1>
+    </div>
+
+</body>
+</html>
