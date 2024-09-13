@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #header h1 {
+            color:blue;
+        }
+        #section h1 {
+            color:orange
+        }
+        #section p {
+            color:rgb(138, 116, 77);
+        }
+
+        /*
+        여기 오렌지 색 넣는 방법 12
+        1. #section * {}
+        2. #section h1, #section p {
+        }
+        바로 아래 것은 다른 거임
+        #section h1, p { // 세션의 p가 아닌 모든 p
+        }
+        
+        */
+    </style>
+</head>
+<body>
+    <!--#header>h1+(#nav>h1)-->
+    <!-- #으로 하면 자동 div태그로-->
+    <div id="header">
+        <!--lorem2:Lorem, ipsum.-->
+        <!--lorem3:Lorem, ipsum dolor.-->
+        <h1>Lorem, ipsum.</h1>
+        <div id="nav">
+            <h1>Lorem.</h1>
+        </div>
+    </div>
+    <!--#section>(h1{lorem}+p{lorem lorem})-->
+    <div id="section">
+        <h1>lorem</h1>
+        <p>lorem lorem</p> <!--여기 오렌지 색 넣는 방법 123-->
+    </div>
+</body>
+</html>

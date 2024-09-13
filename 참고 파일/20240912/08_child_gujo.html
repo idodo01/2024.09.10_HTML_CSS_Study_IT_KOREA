@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 누군가의 첫번째 자손이어야 함 */
+        /* 누군가의 첫번째 자손이면서 그와 동시에 h1태그여야 함 */
+        /* 일반 구조 선택자 */
+        h1:first-child{color:blue}
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet.</p> <!--첫번째 자손은 맞지만 h1이 아님-->
+    <h1>Header-1</h1>
+    <div>
+        <h1>1</h1> <!--색상 적용됨, 첫번째 자손이면서 그와 동시에 h1-->
+        <h1>2</h1>
+        <h1>3</h1>
+    </div>
+    <h2>Header-2</h2>
+    <span>
+        <h1>11</h1><!--색상 적용됨, 첫번째 자손이면서 그와 동시에 h1-->
+        <h1>21</h1>
+        <h1>31</h1>
+    </span>
+    <h3>Header-3</h3>
+    <h3>Header-3</h3>
+    <h2>Header-2</h2>
+    <h1>Header-1</h1>
+</body>
+</html>
