@@ -25,19 +25,25 @@ table
 
 ===========================================
 3 (20240912)
-1) <style>
+
+1)  #section h1, #section p {}
+    #section h1, p {}
+
+    두 가지는 다른 것
+     
+2) <style>
     input[type=text] {color:red;} 
 </style>
 
 <input type="text"> 태그에 css 적용
 
-2) table를 자손선택자로 css를 적용할 때, 
+3) table를 자손선택자로 css를 적용할 때, 
 table과 tr 사이에 자동으로 생기는 tbody를 넣어줘야한다
 <style>
     table>tbody>tr>th
 </style>
 
-3) #으로 하면 자동 div태그로
+4) #으로 하면 자동 div태그로
 #header>h1+(#nav>h1)
 <div id="header">
     <!--lorem2:Lorem, ipsum.-->
@@ -46,4 +52,22 @@ table과 tr 사이에 자동으로 생기는 tbody를 넣어줘야한다
     <div id="nav">
         <h1>Lorem.</h1>
     </div>
-</div>
+</div>     
+
+5) 
+폰트사이즈 em는 배
+
+투명도(opasity)는 자식태그에도 영향을 준다
+
+이미지는 style에 백그라운드에서도 사용가능
+<style>
+    body{background-image:url('https~~~~')}
+</style>
+
+===========================================
+3 (20240913)
+
+구글 폰트 (사이트)
+https://fonts.google.com/selection/embed
+눈누
+https://noonnu.cc/

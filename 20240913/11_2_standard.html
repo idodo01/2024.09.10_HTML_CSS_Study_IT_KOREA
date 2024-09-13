@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+    <style>
+        /* Reset CSS, 웹브라우저 별로 다른 마진 등을 제거하는 것 
+        이렇게 스스로 만들어도 되고, 만들어진 reset css를 사용해도 됨*/
+        * {
+            margin:0; padding:0; /* 모든 여백 제거*/
+        }
+        body { /* 글꼴 통일 */
+            font-family: 'Times New Roman', Times, serif;
+        }
+        li { /* 목록 스타일 제거 */
+            list-style:none; 
+        }
+        a { /* 밑줄 제거 */
+            text-decoration: none;
+        }
+        img { /* 이미지 태그 테두리 제거 */
+            border:0;
+        }
+    </style>
+    <!-- style 태그를 분활해도 됨-->
+    <style>
+        #main_header {
+            width:960px;
+            margin: 0 auto; /* 중앙 정렬*/
+            height: 160px;
+            position: relative;
+        }
+        #main_header>#title{
+            position: absolute;
+            left:20px; top:30px;
+        }
+
+        #main_header>#main_gnb{
+            position: absolute;
+            right: 0; top: 0;
+        }
+
+        #main_header>#main_lnb{
+            position: absolute;
+            right: 0; bottom: 100px;
+        }
+        #title>* { /* 구글 폰트 설정 복붙*/
+            font-family: "Playwrite CU", cursive;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+    <style>
+        /* gnb */
+        #main_gnb>ul{
+            overflow: hidden;
+        }
+        #main_gnb>ul>li{
+            float:left
+        }
+        #main_gnb>ul>li>a{
+            display: block;
+            padding: 2px 10px;
+            border: 1px solid black;
+        }
+        #main_gnb>ul>li>a:hover{
+            background-color: rgb(100, 144, 255);
+            color:white
+        }
+        #main_gnb>ul>li:first-child>a{
+            border-radius: 10px 0 0 10px;
+        }
+        #main_gnb>ul>li:last-child>a{
+            border-radius:  0 10px 10px 0;
+        }
+
+        /* lnb */
+        #main_lnb>ul{
+            overflow: hidden;
+
+        }
+        #main_lnb>ul>li{
+            float:left
+        }
+        #main_lnb>ul>li>a{
+            display: block;
+            padding: 2px 10px;
+            border: 1px solid black;
+        }
+        #main_lnb>ul>li>a:hover{
+            background-color: rgb(255, 147, 246);
+            color:white
+        }
+        #main_lnb>ul>li:first-child>a{
+            border-radius: 10px 0 0 10px;
+        }
+        #main_lnb>ul>li:last-child>a{
+            border-radius:  0 10px 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="main_header">
+        <div id="title">
+            <h1>Lorem, ipsum.</h1>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+        </div>
+        <!--gnb-->
+        <nav id="main_gnb">
+            <ul>
+                <li><a href="#">웹</a></li>
+                <li><a href="#">모바일</a></li>    
+                <li><a href="#">게임</a></li>
+                <li><a href="#">시뮬레이션</a></li>
+                <li><a href="#">데이터</a></li>
+            </ul>
+        </nav>
+        <!--lnb-->
+        <nav id="main_lnb">
+            <ul>
+                <li><a href="#">html</a></li>
+                <li><a href="#">css</a></li>
+                <li><a href="#">자바스크립트</a></li>
+                <li><a href="#">제이퀘리</a></li>
+                <li><a href="#">스프링</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="content">
+
+        <!--section-->
+        <section id="main_section">
+            <article class="main_article">
+                <h1>메인 아티클1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsum neque inventore non obcaecati explicabo ex cum reiciendis minus sequi maxime id porro facere officia repellendus ipsa, voluptatem accusamus et numquam aliquam. Quae perferendis in qui commodi asperiores sit delectus vel amet illo quisquam tempora distinctio deleniti quidem voluptate reiciendis, possimus, ipsum minus beatae nostrum reprehenderit consequatur! Reprehenderit cupiditate nihil, velit aperiam a dolorum beatae quaerat in dolores voluptas ipsum officia ut exercitationem. Nihil nam nulla accusantium esse rem rerum, autem illum qui eligendi nobis dignissimos a amet eveniet praesentium animi corporis pariatur totam. Magni alias modi illum nisi et.</p>
+            </article>
+            <article class="main_article">
+                <h1>메인 아티클2</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsum neque inventore non obcaecati explicabo ex cum reiciendis minus sequi maxime id porro facere officia repellendus ipsa, voluptatem accusamus et numquam aliquam. Quae perferendis in qui commodi asperiores sit delectus vel amet illo quisquam tempora distinctio deleniti quidem voluptate reiciendis, possimus, ipsum minus beatae nostrum reprehenderit consequatur! Reprehenderit cupiditate nihil, velit aperiam a dolorum beatae quaerat in dolores voluptas ipsum officia ut exercitationem. Nihil nam nulla accusantium esse rem rerum, autem illum qui eligendi nobis dignissimos a amet eveniet praesentium animi corporis pariatur totam. Magni alias modi illum nisi et.</p>
+            </article>
+            <article class="main_article">
+                <h1>메인 아티클3</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsum neque inventore non obcaecati explicabo ex cum reiciendis minus sequi maxime id porro facere officia repellendus ipsa, voluptatem accusamus et numquam aliquam. Quae perferendis in qui commodi asperiores sit delectus vel amet illo quisquam tempora distinctio deleniti quidem voluptate reiciendis, possimus, ipsum minus beatae nostrum reprehenderit consequatur! Reprehenderit cupiditate nihil, velit aperiam a dolorum beatae quaerat in dolores voluptas ipsum officia ut exercitationem. Nihil nam nulla accusantium esse rem rerum, autem illum qui eligendi nobis dignissimos a amet eveniet praesentium animi corporis pariatur totam. Magni alias modi illum nisi et.</p>
+            </article>
+        </section>
+
+        <!--aside-->
+        <aside id="main_aside">
+            <input type="radio" id="first" name="tab" checked>
+            <input type="radio" id="second" name="tab">
+            <section class="buttons">
+                <label for="first"></label>
+                <label for="second"></label>
+            </section>
+            <div class="tab_item">
+                <ul>
+                    <!--li.item>a[href=#]>(.thumbnail)>img-->
+                    <li class="item">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img src="https://picsum.photos/id/684/600/400" alt="">
+                            </div>
+                            <div class="description">
+                                <strong>html5</strong>
+                                <p>2024-09-13</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img src="https://picsum.photos/id/684/600/400" alt="">
+                            </div>
+                            <div class="description">
+                                <strong>html5</strong>
+                                <p>2024-09-13</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img src="https://picsum.photos/id/684/600/400" alt="">
+                            </div>
+                            <div class="description">
+                                <strong>html5</strong>
+                                <p>2024-09-13</p>
+                            </div>
+                        </a>
+                    </li>  
+                </ul>
+            </div>
+            <div class="tab_item"></div>
+                <ul>
+                    <!--li.item>a[href=#]>(.thumbnail)>img-->
+                    <li class="item">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img src="https://picsum.photos/id/684/600/400" alt="">
+                            </div>
+                            <div class="description">
+                                <strong>html5</strong>
+                                <p>2024-09-13</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img src="https://picsum.photos/id/684/600/400" alt="">
+                            </div>
+                            <div class="description">
+                                <strong>html5</strong>
+                                <p>2024-09-13</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img src="https://picsum.photos/id/684/600/400" alt="">
+                            </div>
+                            <div class="description">
+                                <strong>html5</strong>
+                                <p>2024-09-13</p>
+                            </div>
+                        </a>
+                    </li>  
+                </ul>
+            </div>
+        </aside>
+    </div>
+    <footer id="fotter">
+        <h3>HTML5</h3>
+        <address> 웹사이트 기초</address>
+    </footer>
+</body>
+</html>
