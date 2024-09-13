@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #header>h1{color:springgreen}
+    </style>
+</head>
+<body>
+    <!-- #header>(h1{title}+(div>h1{navi})+h1{third}) -->
+    <div id="header">
+        <h1>title</h1><!--id가 header인 태그의 자손(후손이기도 함)-->
+        <div>
+            <h1>navi</h1><!--id가 header인 태그의 후손(자손은 아님)-->
+        </div>
+        <h1>third</h1><!--id가 header인 태그의 자손(후손이기도 함)-->
+    </div>
+</body>
+</html>
