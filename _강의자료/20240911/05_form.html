@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- get 방식 : URL에 내가 적은 내용이 나옴 -->
+    <form action="02_image.html" method="get">
+        <input type="text" name="search">
+        <input type="submit"> <!--submit : 제출, 클릭하면 action에 적힌 곳으로 이동-->
+    </form>
+    <!-- post 방식 : URL에 내가 적은 내용이 안 나옴 -->
+    <form action="02_image.html" method="post">
+        <input type="text" name="mysearch">
+        <input type="submit" value="post보내기">
+    </form>
+    <!--action을 적지 않으면 자기 자신으로 돌아옴-->
+    <form method="get">
+        <!--여러 개 선택 가능-->
+        <label for="lol">리그오브레전드</label>
+        <input type="checkbox" name="hobby" value="lol" id="lol">롤<br>
+        <label for="diablo">디아블로</label>
+        <input type="checkbox" name="hobby" value="dia" id="diablo">디아<br>
+        <input type="checkbox" name="hobby" value="star" id="star">
+        <label for="star">스타</label>
+        <br>
+        <label for="zam">잠</label>
+        <input type="checkbox" name="hobby" value="sleep" checked id="zam"><br>
+        <!--하나만 선택 가능, name으로 그룹을 지음-->
+        <input type="radio" name="gender" value="man"checked="checked">남<br>
+        <input type="radio" name="gender" value="woman">여<br>
+        <!--하나만 선택 가능, name으로 그룹을 지음-->
+        <input type="radio" name="grade" value="high">상<br>
+        <input type="radio" name="grade" value="middle" checked>중<br>
+        <input type="radio" name="grade" value="low">하<br>
+        <input type="submit">
+    </form>
+
+    <!--method를 생략하면 get이 기본 값-->
+    <form>
+        <textarea name="30px" id="20">Hello</textarea>
+        <textarea name="30px" id="20">
+            Hello1
+        Hello2</textarea>
+
+        <!--하나만 선택-->
+        <select>
+            <!-- $ : 숫자, 중괄호{} : 태그 안의 내용-->
+            <!-- option{$}*3 -->
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+        </select>
+        <!-- 여러 개 선택-->
+        <select multiple="multiple">
+            <!-- option{$$}*5 -->
+            <option>01</option>
+            <option>02</option>
+            <option>03</option>
+            <option>04</option>
+            <option>05</option>
+        </select>
+
+        <select>
+            <optgroup label="Game">
+                <option>로스트 아크</option>
+                <option>카트 라이더</option>
+                <option>문명</option>
+            </optgroup>
+            <optgroup label="Study">
+                <!-- option{java} -->
+                <option>java</option>
+                <option>jsp</option>
+                <option>spring</option>
+            </optgroup>
+        </select>
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 중앙 정렬 공식 : 부모 태그에 width 적용 후 margin : 0 auto 주기 */
+        body {width: 560px; margin: 0 auto;}
+
+        #aside{width: 200px;float: left; background-color: pink;}
+        /* 30px이 비게 됨, 30px은 여백이 되는 것 */
+        #section{width: 330px;float: right; background-color: aquamarine;}
+        #clear{clear:both}
+        
+        </style>
+</head>
+<body>
+    <!-- #header>h1{Header} -->
+    <div id="header">
+        <h1>Header</h1>
+    </div>
+    <!-- #navigation>h1{Navigation} -->
+    <div id="navigation">
+        <h1>Navigation</h1>
+    </div>
+    <!-- tab : 들여쓰기 -->
+    <!-- shift tab : 내어쓰기(?)-->
+    <div id="aside">
+        <h1>aside</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim recusandae in quis natus laborum, ex aut reiciendis corrupti similique earum dicta id, excepturi error nostrum sint sit, doloremque sed ducimus?</p>
+    </div>
+    <div id="section">
+        <h1>section</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt placeat neque explicabo dolore amet impedit culpa vitae, harum sint illum delectus officia sapiente aperiam qui, sunt quis excepturi laborum maxime.</p>
+    </div>
+    <div id="clear"></div><!--clear:both 적용한 태그, footer가 위로 올라가지 않게 해 줌-->
+    <!-- #footer>h1{footer} -->
+     <div id="footer">
+        <h1>footer</h1>
+     </div>
+</body>
+</html>

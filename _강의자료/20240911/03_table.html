@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--tabel : 표를 의미, border는 테두리 선-->
+    <!--tr:table row : 표의 행(줄), th : table head,제목, td:table data=열,데이터-->
+    <table border=1>
+        <tr>
+            <th>이름</th>
+            <th>나이</th>
+        </tr>
+        <tr>
+            <td>이동준</td>
+            <td>35</td>
+        </tr>
+        <tr>
+            <!--td*2 하면 td 태그 두 개 생김-->
+            <td>김무성</td>
+            <td>25</td>
+        </tr>
+    </table>
+
+    <!-- table>caption -->
+     <!-- <table border=1> -->
+        <table>
+        <!--테이블 자체에 대한 설명-->
+        <caption>[표1] 예시</caption>
+        <!--colgroup>(col*2)-->
+        <!--column(열) group : 열들의 스타일을 지정할 수 있음-->
+        <colgroup>
+            <!--1열, 2열 바탕 색을 아쿠아 색으로 만듦-->
+            <col span="2" style="background-color: aqua;">
+            <!--3열의 바탕 색을 핑크로 꾸밈-->
+            <col style="background-color: pink;">
+        </colgroup>
+        <!-- 표의 제목 부분 -->
+        <!-- alt 키 + 마우스 클릭 -->
+        <thead>
+            <!--th*3-->
+            <!--alt ctrl 키 동시에 누르고 키보드 위 아래로 움직이면 여러 개 선택 가능-->
+            <tr>
+                <th>표 제목 1 </th>
+                <th>표 제목 2 </th>
+                <th>표 제목 3 </th>
+            </tr> <!-- alt키 + 위 아래 하면 글자가 위 아래로 이동함 -->
+        </thead>
+        <!--표의 내용 부분-->
+        <tbody>
+            <tr>
+                <td>테이블 내용 추가</td> <!--tab 키 누르면 들여쓰기-->
+                <td>테이블 내용 추가</td>
+                <td>테이블 내용 추가</td>
+            </tr>
+            <tr>
+                <!--alt shift 위 혹은 아래키 : 텍스트 한 줄 복사&붙여넣기-->
+                <td>테이블 내용 추가</td>
+                <td>테이블 내용 추가</td>
+                <td>테이블 내용 추가</td>
+            </tr>
+            <!-- ctrl + / : 주석 단축키 -->
+            <!-- tr>(td*3) -->
+             <tr>
+                <td>테이블 내용 추가</td>
+                <td>테이블 내용 추가</td>
+                <td>테이블 내용 추가</td>
+             </tr>
+        </tbody>
+        <!--표의 아랫 부분-->
+        <tfoot>
+            <!-- tr>(td*3) -->
+             <!-- ctrl + space : 자동 완성-->
+            <tr>
+                <td>표의 꼬리 부분</td>
+                <td>표의 꼬리 부분</td>
+                <td>표의 꼬리 부분</td>
+            </tr>
+        </tfoot>
+     </table>
+
+     <!-- table[border=1] -->
+      <table border="1">
+        <tr>
+            <th colspan="3">첫번째 줄</th>
+            <th rowspan="3">네번째 열</th>
+        </tr>
+        <tr>
+            <td>2행 1열</td>
+            <td rowspan="2">2행과 3행 2열</td>
+            <td>2행 3열</td>
+        </tr>
+        <tr>
+            <td>3행 1열</td>
+            <td>3행 3열</td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <img src="https://picsum.photos/id/684/600/400" alt="">
+            </td>
+        </tr>
+      </table>
+
+</body>
+</html>

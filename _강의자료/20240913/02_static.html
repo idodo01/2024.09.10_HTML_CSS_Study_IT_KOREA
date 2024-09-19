@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* position 속성의 값이 static인 경우(기본값인 경우) */
+        /* left, top에 무슨 값을 주든 간에 body안의 순서대로 태그가 들어감 */
+        .box{width: 100px; height: 100px;}
+        .red{background: red; left:50px; top:50px;}
+        .green{background: green; left:0px; top:0px}
+        .blue{background: blue;}
+    </style>
+</head>
+<body>
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box blue"></div>
+</body>
+</html>
