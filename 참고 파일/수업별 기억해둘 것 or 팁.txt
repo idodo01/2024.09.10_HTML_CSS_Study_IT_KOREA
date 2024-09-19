@@ -71,3 +71,16 @@ table과 tr 사이에 자동으로 생기는 tbody를 넣어줘야한다
 https://fonts.google.com/selection/embed
 눈누
 https://noonnu.cc/
+
+========================
+4 (20240919)
+1) 홈페이지 만들어주는 사이트 - 드림위버, 나모웹에디터
+2) 부트 스트랩 사이트 
+- https://startbootstrap.com/
+- https://www.codeply.com/
+- https://w3layouts.com/
+
+3) ctrl+x 해당 열 잘라내기
+
+4) link 태그는 외부 css 파일을 가져올 때
+script는 자바스크립트 파일
