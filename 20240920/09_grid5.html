@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* 이름을 지어주는 것 */
+        .Header {
+            grid-area:Header;
+        }
+        .Aside {
+            grid-area:Aside;
+        }
+        .Section {
+            grid-area:Section;
+        }
+        .Footer {
+            grid-area:Footer;
+        }
+
+
+        #container  {
+            display: grid;
+            gap:10px;
+            grid-template-columns: 1fr 200px 1fr;
+            grid-template-rows: 50px 1fr;
+            grid-template-areas:
+            /*큰 따옴표 사용하면 안됨*/
+            'Header Header'
+            'Aside Section'
+            'Footer Footer'
+        }
+        #container>div {
+            border: 1px soild black;
+            background-color: cornflowerblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="Header">Header</div>
+        <div class="Aside">Aside</div>
+        <div class="Section">Section</div>
+        <div class="Footer">Footer</div>
+    </div>
+</body>
+</html>
