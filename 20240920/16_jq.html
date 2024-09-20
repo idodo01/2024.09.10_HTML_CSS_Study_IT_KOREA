@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1 id="one">1</h1>
+    <h1 id="two">2</h1>
+    <h1 id="three">3</h1>
+    <h1 id="four">4</h1>
+    <script>
+        // one, three 가 jquery($)
+        // two, four은 바닐라 js
+
+        // $ = document
+
+        // 1. jquery($)
+        $('#one').css('background-color','yellow').css('color','blue')
+
+        // 2. 바닐라 js
+        let two = document.querySelector('#two')
+        two.style.color = 'pink'
+
+        // 3. jquery($)
+        let three = $('#three')
+        three.css('background-color','green').css('color','springgreen')
+
+        // 4. 바닐라 js
+        let four = document.getElementById('four')
+        four.style.color='white'
+        four.style.background='hotpink'
+    </script>
+</body>
+</html>

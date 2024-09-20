@@ -1,5 +1,8 @@
 // 스크립트 이용해서 css를 적용하건 이벤트를 별도로 추가해줄 수 있음
 // title 변수에 id가 title인 태그를 저장해서 그 태그의 색깔을 파란색으로 바꿈
+
+// querySelector는 1개만 선택됨
+// querySelectorAll은 모든 태그가 선택됨
 let title = document.querySelector('#title') // querySelector: 선택자
 title.style.color = 'blue'
 
