@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. 큰따옴표 써도 됨: 문자와 문자열을 구분하지 않음 스크립트는
+        // 2. 세미콜론 생략가능
+        console.log('hello world'); 
+        alert('hello world'); 
+        // 3. alert() 알림창으로 텍스트 확인을 하든지
+        // html 창 실행시켜서 f12로 확인 가능
+
+        // 4. 변수: 다른 언어에서는 정수형 변수, 실수형 변수를 구분
+        // but, 파이썬이나 js에서는 구분 x
+        var a = 1
+        a = "안녕하세요" // 대입하여 값 변경 가능
+        let b = 10
+        b = "hello"
+        alert(a)
+        alert(b)
+
+        // 5. 상수: 선언하고 값이 바뀌지 않는 경우 사용
+        const c = "hello"
+
+        // 6. var이 let보다 옛날에 나온 키워드
+        // 가장 큰 차이는
+        // var은 중복해서 변수 선언 가능
+        // let은 중복해서 변수 선업 불가능, 에러남
+        var ex1 = "안녕"
+        var ex1 = 123
+        alert(ex1)
+
+        //let ex2 = "안녕"
+        //let ex2 = 123
+        //alert(ex2)
+
+    </script>
+</body>
+</html>
