@@ -84,3 +84,12 @@ https://noonnu.cc/
 
 4) link 태그는 외부 css 파일을 가져올 때
 script는 자바스크립트 파일
+
+========================
+4 (20240920)
+
+1) (주의) 윤고딕은 대표적인 유료 폰트 
+폰트는 네이버 폰트,. 눈누, 구글폰트 등에서 구할 수 있다
+
+2) 이미지 나눠서 만드는 것
+https://www.toptal.com/developers/css/sprite-generator/
